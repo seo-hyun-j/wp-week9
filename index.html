@@ -30,7 +30,7 @@
         .then(res => res.text())
         .then(txt => JSON.parse(txt.replace(/^\(/, '').replace(/\)$/, '')).results)
         .then(display)
-        .then(addressSearch)
+        
         .then(() => form.reset())
         .catch(console.error);
     });
